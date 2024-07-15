@@ -1,0 +1,94 @@
+import { Dimensions, Platform, StyleSheet } from "react-native";
+import { Colors } from "../../utils/Colors";
+const windowHeight=Dimensions.get('window').height;
+export const styles=StyleSheet.create({
+    scrollViewContent:{
+        flexGrow: 1,
+    backgroundColor: Colors.black,
+    },
+    imageStyle:{
+        height:Dimensions.get('window').height/1.5,
+    },
+    mainView:{
+        marginHorizontal:16,
+        marginTop:78
+    },
+    backhandler:{
+        height:14,
+        width:10
+    },
+    backContainer:{
+        padding:10
+    },
+    headerView:{
+        marginTop:17,
+        marginLeft:25,
+    },
+    headingText:{
+        color:Colors.white,
+        fontWeight:"600",
+        fontSize:17,
+        fontFamily:"Poppins-SemiBold",
+    },
+    subText:{
+        color:Colors.white,
+        fontWeight:"600",
+        fontSize:19,
+        fontFamily:"Poppins-SemiBold"
+    },
+    rewardView:{
+        borderRadius:15,
+        backgroundColor:Colors.secondaryBlack,
+        marginTop:Platform.OS=='android' ? -windowHeight/3 : -310,
+        alignSelf:"center",
+
+    },
+    rewardHeadingContainer:{
+        marginHorizontal:14,
+        marginTop:18
+    },
+    rewardSubText:{
+        color:Colors.gray,
+        fontWeight:"500",
+        fontSize:12,
+        fontFamily:"Poppins-SemiBold"
+    },
+    flatListView:{
+        marginTop:16,
+        flexDirection:"row",
+        marginBottom:10
+    },
+    smallContainer:{
+        height:20,
+        width:100
+    },
+    biginnerRewardContainer:{
+        marginTop:10
+    },
+    advertismentContainer:{
+        marginTop:21,
+        marginBottom:18
+    },
+    bonusText:{
+        color:Colors.pink
+    },
+    advertisementSubContainer:{
+        marginBottom:8
+    },
+    descriptionCotnainer:{
+        marginHorizontal:30,
+        marginTop:34,
+        marginBottom:20
+    },
+    descriptionHeading:{
+        color:Colors.white,
+        fontSize:13,
+        fontFamily:"Poppins-SemiBold"
+    },
+    descriptionSubHeading:{
+        color:Colors.white,
+        fontSize:10,
+        fontFamily:"Poppins-Regular",
+        marginBottom:10
+    }
+})
