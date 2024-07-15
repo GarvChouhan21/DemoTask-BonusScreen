@@ -31,7 +31,7 @@ const CommonAdvertisementCard = () => {
           start={{x: 0, y: 0}}
           end={{x: 1, y: 1}}
           style={[styles.gradient,flag==2 && {opacity:0.6}]}>
-          <Text style={styles.buttonText}>{isSelected && flag!==2 ? "Watch" : "Claim"}</Text>
+          <Text style={styles.buttonText}>{isSelected && flag!==2 ? "Watch" : flag!==2 ?  "Claim" : "Watch"}</Text>
         </LinearGradient>
       </TouchableOpacity>
     </View>
